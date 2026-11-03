@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --warna-utama: #0d6e6e;
+    --warna-utama-gelap: #095555;
+    --warna-pemasukan: #198754;
+    --warna-pengeluaran: #dc3545;
+    --warna-saldo: #0a58ca;
+    --warna-latar: #eef6f6;
+    --warna-kartu: #eef8ec;
+    --warna-teks: #1a2e2e;
+    --bayangan-kartu: 0 0.35rem 1rem rgba(13, 110, 110, 0.12);
+    --transisi-cepat: 0.25s ease;
+}
+
+.navbar-app {
+    background: linear-gradient(90deg, var(--warna-utama-gelap), var(--warna-utama)) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-app .navbar-brand {
+    letter-spacing: 0.02em;
+    font-size: 1.35rem;
+}
+
+.summary-card {
+    border: none;
+    border-left: 5px solid #ccc;
+    background-color: var(--warna-kartu);
+    transition: transform var(--transisi-cepat), box-shadow var(--transisi-cepat);
+}
+
+.summary-pemasukan {
+    border-left-color: var(--warna-pemasukan);
+}
+
+.summary-pemasukan .card-text {
+    color: var(--warna-pemasukan);
+}
+
+.summary-pengeluaran {
+    border-left-color: var(--warna-pengeluaran);
+}
+
+.summary-pengeluaran .card-text {
+    color: var(--warna-pengeluaran);
+}
+
+.summary-saldo {
+    border-left-color: var(--warna-saldo);
+}
+
+.summary-saldo .card-text {
+    color: var(--warna-saldo);
+}
+
+
+.halaman-tabungan main .card {
+    border: none;
+    border-radius: 0.65rem;
+    overflow: hidden;
+    box-shadow: var(--bayangan-kartu);
+    transition: box-shadow var(--transisi-cepat);
+}
+
+.halaman-tabungan main .card:hover {
+    box-shadow: 0 0.5rem 1.25rem rgba(13, 110, 110, 0.18);
+}
+
+.halaman-tabungan main .card-header {
+    background: linear-gradient(90deg, var(--warna-utama-gelap), var(--warna-utama));
+    color: #ffff;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+
+.halaman-tabungan .btn-primary {
+    background-color: var(--warna-utama);
+    border-color: var(--warna-utama);
+    font-weight: 600;
+    padding: 0.5rem 1.25rem;
+    transition: background-color var(--transisi-cepat), transform var(--transisi-cepat);
+}
+
+.halaman-tabungan .btn-primary:hover,
+
+.halaman-tabungan .btn-primary:focus {
+    background-color: var(--warna-utama-gelap);
+    border-color: var(--warna-utama-gelap);
+}
+
+.halaman-tabungan .btn-primary:active {
+    transform: scale(0.98);
+}
+
+.halaman-tabungan .form-control:focus,
+.halaman-tabungan .form-select:focus {
+    border-color: var(--warna-utama);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 110, 0.25);
+}
+
+.halaman-tabungan .table thead.table-dark {
+    background-color: var(--warna-utama-gelap) !important;
+}
+
+.halaman-tabungan .table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 110, 0.08);
+}
+
+
+#pesan-validasi {
+    font-weight: 600;
+}
+
+
+.site-footer {
+    background-color: #0d6e6e;
+    color: #f8f9fa;
+    margin-top: 2rem;
+    letter-spacing: 0.03em;
+}
+
+.site-footer p {
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
